@@ -1,11 +1,17 @@
 <template>
   <div class="worship">
-    <h1>{{message}}</h1>
+    <Info />
   </div>
 </template>
 
 <script>
+import Info from "@/components/worship/Info.vue";
+
 export default {
+  name: "worship",  
+  components: {
+    Info
+  },
   data(){
     return {
       message : "this is an about page"
