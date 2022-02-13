@@ -1,0 +1,16 @@
+# 명명규칙
+ > (영문2글자) 일렬번호 3자리 (종류 영문 1자리) | 컴포넌트 일렬번호 2자리
+   [ex] WS001V > 예배화면
+        WS001C01 > 예배화면 중 예배시간안내 컴포넌트
+
+ > 홈 : SH ( saesaem home )
+   교회안내 : AC ( about church )
+   예배 : WS ( worship )
+   새샘갤러리 : GL ( gallery )
+   교회학교 : CS ( church school )
+   교제 : MT ( meetings )
+
+ > 종류
+   컴포넌트 : C ( component )
+   뷰 : V ( view )
+   스타일 : S ( style )

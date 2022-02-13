@@ -1,48 +1,53 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import Home from "../views/Home.vue";
 
-const routes = [
-  {
-    path: "/",
-    name: "Home",
-    component: Home,
-  },
-  {
-    path: "/aboutCh",
-    name: "aboutCh",
-    component: () => import("../views/AboutCh.vue"),
-  },
-  {
-    path: "/worship",
-    name: "worship",
-    component: () => import("../views/Worship.vue"),
-  },
-  {
-    path: "/gallery",
-    name: "gallery",
-    component: () => import("../views/Gallery.vue"),
-  },
-  {
-    path: "/schoolCh",
-    name: "schoolCh",
-    component: () => import("../views/SchoolCh.vue"),
-  },
-  {
-    path: "/meetings",
-    name: "meetings",
-    component: () => import("../views/Meetings.vue"),
-  },
+const routes = [{
+        path: "/",
+        name: "home",
+        component: () =>
+            import ("../views/SH001V.vue"),
+    },
+    {
+        path: "/ac",
+        name: "aboutChurch",
+        component: () =>
+            import ("../views/AC001V.vue"),
+    },
+    {
+        path: "/ws",
+        name: "worship",
+        component: () =>
+            import ("../views/WS001V.vue"),
+    },
+    {
+        path: "/gl",
+        name: "gallery",
+        component: () =>
+            import ("../views/GL001V.vue"),
+    },
+    {
+        path: "/cs",
+        name: "churchSchool",
+        component: () =>
+            import ("../views/CS001V.vue"),
+    },
+    {
+        path: "/mt",
+        name: "meetings",
+        component: () =>
+            import ("../views/MT001V.vue"),
+    },
 
-  {
-    path: "/sample",
-    name: "sample",
-    component: () => import("../views/Sample.vue"),
-  }
+    {
+        path: "/sample",
+        name: "sample",
+        component: () =>
+            import ("../views/Sample.vue"),
+    }
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
-  routes,
+    history: createWebHashHistory(),
+    routes,
 });
 
 export default router;
